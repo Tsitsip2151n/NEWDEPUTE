@@ -34,7 +34,7 @@ public class FenetreResultats extends JFrame {
 
      void initialiserUI() {
         setTitle("Résultats des élections");
-        setSize(850, 650); // Taille légèrement augmentée
+        setSize(850, 650); 
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -66,7 +66,7 @@ public class FenetreResultats extends JFrame {
         resultArea.setEditable(false);
         resultArea.setFont(new Font("Monospaced", Font.PLAIN, 13)); 
         JScrollPane scrollPane = new JScrollPane(resultArea);
-        scrollPane.setPreferredSize(new Dimension(800, 500)); // Taille ajustée
+        scrollPane.setPreferredSize(new Dimension(800, 500));
 
         JButton showResultsButton = new JButton("Afficher les résultats");
         showResultsButton.addActionListener(e -> afficherResultats(
@@ -85,6 +85,7 @@ public class FenetreResultats extends JFrame {
 
         add(mainPanel);
     }
+
 
      void ajouterComposant(JPanel panel, JLabel label, JComponent component, GridBagConstraints gbc) {
         gbc.gridx = 0;
